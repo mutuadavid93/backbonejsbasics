@@ -6,7 +6,7 @@
 
 var developers = new app.singleFriend({
    name: "William wambua",
-   hairColor: "black",
+   hairColor: "brown",
    mvc: "Angularjs",
    link: "William_wambua",
    image: "images/William_wambua.jpg"
@@ -22,11 +22,8 @@ var dataWranglers = new app.singleFriend({
 var netWorkEngineers = new app.singleFriend({
     name: "Lydia muthoki",
     mvc: "Knockoutjs",
-    images: "images/Lydia_muthoki.jpg",
+    image: "images/Lydia_muthoki.jpg",
     link: "Lydia_muthoki"
 });
 
-
-console.log(developers.toJSON());
-console.log(dataWranglers.toJSON());
-console.log(netWorkEngineers.toJSON());
+developers.set('mvc', 'ASP.NET MVC 4');

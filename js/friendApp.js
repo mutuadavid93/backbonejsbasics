@@ -26,4 +26,10 @@ var netWorkEngineers = new app.singleFriend({
     link: "Lydia_muthoki"
 });
 
-developers.set('mvc', 'ASP.NET MVC 4');
+
+//instantiate the collection
+var friendsGroup = new app.friendsCollection([
+   developers, dataWranglers, netWorkEngineers
+]);
+
+console.log(friendsGroup.toJSON());

@@ -16,7 +16,7 @@ app.singleFriend = Backbone.Model.extend({
    initialize: function () {
        //as soon as model mvc property change
        this.on('change:mvc', function () {
-           console.log("mvc of " +this.get('name')+ " model changed to "+this.get('mvc'));
+           //console.log("mvc of " +this.get('name')+ " model changed to "+this.get('mvc'));
        });
    }
     
